@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText android:id="@+id/inputValor" android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:hint="Valor R$" android:inputType="numberDecimal"/>
+        <EditText android:id="@+id/inputKm" android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:hint="KM" android:inputType="numberDecimal"/>
+        <EditText android:id="@+id/inputMin" android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:hint="Min" android:inputType="number"/>
+        <Button android:id="@+id/btnCalcular" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="Calcular"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="60dp"
+        android:layout_marginTop="20dp" android:background="#000" android:orientation="horizontal"
+        android:padding="8dp">
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+            <TextView android:id="@+id/txtValorMin" android:text="0,00"
+                android:textColor="#00FF00" android:textSize="24sp" android:textStyle="bold"/>
+            <TextView android:text="/min" android:textColor="#00FF00" android:textSize="10sp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+            <TextView android:id="@+id/txtValorHora" android:text="0"
+                android:textColor="#00FF00" android:textSize="24sp" android:textStyle="bold"/>
+            <TextView android:text="/hr" android:textColor="#00FF00" android:textSize="10sp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+            <TextView android:id="@+id/txtValorKm" android:text="0,00"
+                android:textColor="#00FF00" android:textSize="24sp" android:textStyle="bold"/>
+            <TextView android:text="/km" android:textColor="#00FF00" android:textSize="10sp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:orientation="vertical" android:gravity="center">
+            <TextView android:id="@+id/txtLucro" android:text="0,00"
+                android:textColor="#00FF00" android:textSize="24sp" android:textStyle="bold"/>
+            <TextView android:text="Lucro R$" android:textColor="#00FF00" android:textSize="10sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

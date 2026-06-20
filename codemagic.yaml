@@ -11,4 +11,4 @@ workflows:
       - name: Build debug APK
         script: ./gradlew assembleDebug
     artifacts:
-      - build/app/outputs/flutter-apk/debug/*.apk
+    - build/app/outputs/**/*.apk
